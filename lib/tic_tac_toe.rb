@@ -115,7 +115,6 @@ end
    until over?(board) == true 
      turn(board)
    end 
- end
    
    if won?(board)
      puts "congratulation #{winner(board)}!"
