@@ -35,5 +35,24 @@ def position_taken?(board, index)
    else  
      turn(board) 
    end
-end
- 
+ end
+
+ def current_player(board) 
+  num_turn = turn_count(board)
+  if num_turn % 2 == 0 
+    player = "X" 
+  else 
+    player = "O" 
+  end 
+  return player
+end 
+
+def turn_count(board)
+  turn = 0  
+  board.each do |index|
+    if index == "X" || index == "O"
+      turn += 1 
+    end 
+  end 
+  return turn
+end 
