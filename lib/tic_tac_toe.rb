@@ -117,7 +117,7 @@ end
    end 
    
    if won?(board)
-     puts "Congratulation #{board(index)}!"
+     puts "Congratulation #{winner(board)}!"
    elsif draw?(board)
      puts "Cats Game!"
    end 
